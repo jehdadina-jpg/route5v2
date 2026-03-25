@@ -223,4 +223,11 @@ window.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.3 });
     termObs.observe(termBox);
   }
+
+  // 5. Matrix Spin every 15s
+  setInterval(() => {
+    document.querySelectorAll('.matrix-spin').forEach(el => {
+      scrambleText(el);
+    });
+  }, 15000);
 });

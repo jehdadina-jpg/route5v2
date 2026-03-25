@@ -19,9 +19,9 @@
   --text: #EDEDF0;
   --text2: #88889A;
   --text3: #404050;
-  --display: 'Syne', sans-serif;
-  --body: 'DM Sans', sans-serif;
-  --mono: 'DM Mono', monospace;
+  --display: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 html {
@@ -1389,6 +1389,87 @@ footer {
   .term-metrics {
     grid-template-columns: 1fr 1fr;
   }
+<<<<<<< HEAD
+}
+
+/* --- ReactBits Inspired Animations --- */
+
+/* BlurText */
+.blur-word {
+  display: inline-block;
+  filter: blur(12px);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: filter 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+    transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.blur-word.vis {
+  filter: blur(0px);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ScrollReveal (Enhanced .fi) */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+    transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.scroll-reveal.vis {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TrueFocus */
+.true-focus-container {
+  display: inline-flex;
+  gap: 0.35em;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.focus-word {
+  position: relative;
+  display: inline-block;
+  opacity: 0.25;
+  transition: opacity 0.4s ease;
+}
+
+.focus-word.active {
+  opacity: 1;
+}
+
+.focus-ring {
+  position: absolute;
+  border-radius: 4px;
+  border: 1.5px solid rgba(0, 229, 160, 0.5);
+  /* Using Route5 accent */
+  box-shadow: 0 0 8px rgba(0, 229, 160, 0.2);
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  z-index: -1;
+}
+
+/* Beams Canvas */
+#beams-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Magnetic Button Base */
+.magnetic-btn {
+  display: inline-flex;
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+=======
+>>>>>>> afdaaac (changed font)
 }
 
 /* --- ReactBits Inspired Animations --- */

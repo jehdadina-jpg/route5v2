@@ -361,11 +361,13 @@ h1 em {
 
 .arch-div {
   flex-shrink: 0;
-  padding: 0 4px;
-  color: var(--text3);
-  font-size: 18px;
+  padding: 0 12px;
+  color: #00FF41;
+  font-size: 36px;
   display: flex;
   align-items: center;
+  font-weight: 300;
+  text-shadow: 0 0 12px rgba(0, 255, 65, 0.4);
 }
 
 .wrap {

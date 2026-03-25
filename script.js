@@ -23,7 +23,7 @@ class Beams {
     if (!this.canvas) return;
     this.ctx = this.canvas.getContext('2d');
     this.beamCount = options.beamCount || 8;
-    this.beamColor = options.beamColor || "#00E5A0"; // reviveai.tech accent
+    this.beamColor = options.beamColor || "#00E5A0"; // Revive AI accent
     this.beamOpacity = options.beamOpacity || 0.12;
     this.beams = [];
     this.animFrame = null;
